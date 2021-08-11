@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Code blocks" />
+    <title>Code Blocks</title>
+    <link href="/static/styles.chunk.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript
+    ><style>
+      #quizpricingcardcontainer {
+        padding: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      #quizeasystartcard,
+      #quizessentialscard,
+      #quizpluscard,
+      #quizselfemployedcard {
+        border: 1px solid #000;
+        padding: 20px;
+        text-align: center;
+      }
+      .hideRecommended {
+        display: none;
+      }
+      .centerContent {
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px;
+      }
+    </style>
+    <div
+      data-component="QuickbooksPayrollChart"
+      data-props="{id:'quickbooks-online-payroll-en'}"
+    ></div>
+    <div class="centerContent">
+      <div
+        data-component="Tooltip"
+        data-props="{featuretitle:'Who’s eligible?',tooltip:'<p>You’re eligible only if you purchase QuickBooks Online Essentials, EasyStart, or Plus.</p><p>It is not included if you sign up for a free trial or if you’re an existing QuickBooks user.</p>',placement:'bottom',link:true}"
+      ></div>
+    </div>
+    <div
+      data-component="PayrollTogether"
+      data-props="{lang:'en-ca',productName:'QBO_SIMPLE_START',mySelectedPlanTitle:'MY SELECTED PLAN',selectedPlan:'EasyStart',planDiscountTitle:'Save 50% for 3 months',payrollTitle:'Add Payroll (optional)',payrollDescription:'Manage your accounting and payroll in one place. Cancel anytime.',employeeLabel:'employee',perEmployeePrice:3, featureList:['Run payroll & calculate taxes', 'Pay & deduction tracking', 'Payroll reports', 'Direct deposit', 'File & pay taxes', 'Year end forms', 'Records of employment', 'Employee access', 'Free onboarding assistance', 'Print pay cheques', 'Time Tracking', 'Project Costing'],monthLabel:'mo',totalLabel:'Total',taxLabel:'+ applicable tax', buttonLabel:'Continue',radioAddLabel:'Add Payroll',
+  radioNoThanksLabel:'No Thanks',featureBtnLabel:'See features'}"
+    ></div>
+    <div
+      data-component="PayrollTogether"
+      data-props="{lang:'en-ca',productName:'QBO_ESSENTIALS',mySelectedPlanTitle:'MY SELECTED PLAN',selectedPlan:'Essentials',planDiscountTitle:'Save 50% for 3 months',payrollTitle:'Add Payroll (optional)',payrollDescription:'Manage your accounting and payroll in one place. Cancel anytime.',employeeLabel:'employee',perEmployeePrice:3, featureList:['Run payroll & calculate taxes', 'Pay & deduction tracking', 'Payroll reports', 'Direct deposit', 'File & pay taxes', 'Year end forms', 'Records of employment', 'Employee access', 'Free onboarding assistance', 'Print pay cheques', 'Time Tracking', 'Project Costing'],monthLabel:'mo',totalLabel:'Total',taxLabel:'+ applicable tax', buttonLabel:'Continue',radioAddLabel:'Add Payroll',
+  radioNoThanksLabel:'No Thanks',featureBtnLabel:'See features'}"
+    ></div>
+    <div
+      data-component="PayrollTogether"
+      data-props="{lang:'fr-ca',productName:'QBO_PLUS',mySelectedPlanTitle:'MY SELECTED PLAN',selectedPlan:'Plus',planDiscountTitle:'Save 50% for 3 months',payrollTitle:'Add Payroll (optional)',payrollDescription:'Manage your accounting and payroll in one place. Cancel anytime.',employeeLabel:'employee',perEmployeePrice:3, featureList:['Run payroll & calculate taxes', 'Pay & deduction tracking', 'Payroll reports', 'Direct deposit', 'File & pay taxes', 'Year end forms', 'Records of employment', 'Employee access', 'Free onboarding assistance', 'Print pay cheques', 'Time Tracking', 'Project Costing'],monthLabel:'mo',totalLabel:'Total',taxLabel:'+ applicable tax', buttonLabel:'Continue',radioAddLabel:'Add Payroll',
+  radioNoThanksLabel:'No Thanks',featureBtnLabel:'See features'}"
+    ></div>
+    <div id="code-block"></div>
+    <script>
+      !(function (e) {
+        function r(r) {
+          for (
+            var n, l, p = r[0], a = r[1], c = r[2], i = 0, s = [];
+            i < p.length;
+            i++
+          )
+            (l = p[i]),
+              Object.prototype.hasOwnProperty.call(o, l) &&
+                o[l] &&
+                s.push(o[l][0]),
+              (o[l] = 0);
+          for (n in a)
+            Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+          for (f && f(r); s.length; ) s.shift()();
+          return u.push.apply(u, c || []), t();
+        }
+        function t() {
+          for (var e, r = 0; r < u.length; r++) {
+            for (var t = u[r], n = !0, p = 1; p < t.length; p++) {
+              var a = t[p];
+              0 !== o[a] && (n = !1);
+            }
+            n && (u.splice(r--, 1), (e = l((l.s = t[0]))));
+          }
+          return e;
+        }
+        var n = {},
+          o = { 1: 0 },
+          u = [];
+        function l(r) {
+          if (n[r]) return n[r].exports;
+          var t = (n[r] = { i: r, l: !1, exports: {} });
+          return e[r].call(t.exports, t, t.exports, l), (t.l = !0), t.exports;
+        }
+        (l.m = e),
+          (l.c = n),
+          (l.d = function (e, r, t) {
+            l.o(e, r) ||
+              Object.defineProperty(e, r, { enumerable: !0, get: t });
+          }),
+          (l.r = function (e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (l.t = function (e, r) {
+            if ((1 & r && (e = l(e)), 8 & r)) return e;
+            if (4 & r && "object" == typeof e && e && e.__esModule) return e;
+            var t = Object.create(null);
+            if (
+              (l.r(t),
+              Object.defineProperty(t, "default", { enumerable: !0, value: e }),
+              2 & r && "string" != typeof e)
+            )
+              for (var n in e)
+                l.d(
+                  t,
+                  n,
+                  function (r) {
+                    return e[r];
+                  }.bind(null, n)
+                );
+            return t;
+          }),
+          (l.n = function (e) {
+            var r =
+              e && e.__esModule
+                ? function () {
+                    return e.default;
+                  }
+                : function () {
+                    return e;
+                  };
+            return l.d(r, "a", r), r;
+          }),
+          (l.o = function (e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r);
+          }),
+          (l.p = "/");
+        var p = (this["webpackJsonp@codeblocks/app"] =
+            this["webpackJsonp@codeblocks/app"] || []),
+          a = p.push.bind(p);
+        (p.push = r), (p = p.slice());
+        for (var c = 0; c < p.length; c++) r(p[c]);
+        var f = a;
+        t();
+      })([]);
+    </script>
+    <script src="/static/codejs.chunk.js"></script>
+    <script src="/static/main.chunk.js"></script>
+  </body>
+</html>
